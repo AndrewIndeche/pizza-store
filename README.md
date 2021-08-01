@@ -1,12 +1,12 @@
    </head>
     <body>
-    <h1>Delani studio landing page<h1>
+    <h1>Pizza Planet Landing Page<h1>
      <h2>Project description</h2>
           Independent Project
-         <p>Date 23rd July 2021</p>
+         <p>Date 30th July 2021</p>
          <p>The project is an individual Project focusing on:</p>
       <ul>
-     <li>The project involves creating a landing page for Delani studio that offers website development services to its client by understanding the core business and its goals and translating it to a website </li>
+     <li>The project involves creating a landing page for Pizza Planet Kenya: An Urban pizza store based in Kenya that sells a variety of pizza prices allowing customers to pick a pizza type and checkout.Pizza Planet also offers delivery services and in store pick ups </li>
      </div>
      </div>
          </ul>
