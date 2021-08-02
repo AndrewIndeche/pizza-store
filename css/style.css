@@ -5,10 +5,10 @@
   width: 25%;
 }
 .topnav {
-  background-color: #333;
+  background-color: grey;
   overflow: hidden;
   margin:0 auto;
-  width:700px;
+  width:1200px;
 }
 .topnav a {
   float: left;
@@ -19,11 +19,20 @@
 }
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: grey;
 }
 
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
-  background-color: #ff0000
+  background-color: #ff0000;
+}
+#HomeID {
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    height:320px;
+    color: white;
+    background-repeat: no-repeat;
+  }
 }
