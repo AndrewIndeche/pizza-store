@@ -4,7 +4,7 @@ $(document).ready(function() {
     // alert("yes");
     event.preventDefault();
     // Gets the input of one pizza
-    var pizzaOne = function add(size, crust size, pizzaTop) {
+    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop) {
       var pizzaSizing = $("#inputGroupSelect01 option:selected").val();
       var pizzaCrusting = $("#inputGroupSelect2 option:selected").val();
       var pizzaTopping = $("#inputGroupSelect03 option:selected").val();
@@ -12,45 +12,31 @@ $(document).ready(function() {
 
       switch (pizzaSizing) {
         case "1":
-          pizzaPrice = 600;
+          pizzaPrice = 450;
           break;
         case "2":
-          pizzaPrice = 900;
+          pizzaPrice = 650;
           break;
         case "3":
-          pizzaPrice = 1200;
+          pizzaPrice = 850;
           break;
         default:
           pizzaPrice;
           break;
       }
-
 
       switch (pizzaCrusting) {
         case "1":
-          pizzaPrice = 200;
-          break;
-        case "2":
           pizzaPrice = 150;
           break;
-        case "3":
-          pizzaPrice = 250;
-          break;
-        case "4":
-          pizzaPrice = 300;
-          break;
-        case "5":
-          pizzaPrice = 100;
-          break;
-        default:
+            default:
           pizzaPrice;
           break;
       }
 
-
       switch (pizzaTopping) {
         case "1":
-          pizzaPrice = 100;
+          pizzaPrice = 150;
           break;
 
         case "2":
@@ -58,24 +44,9 @@ $(document).ready(function() {
           break;
 
         case "3":
-          pizzaPrice = 50;
+          pizzaPrice = 150;
           break;
 
-        case "4":
-          pizzaPrice = 50;
-          break;
-
-        case "5":
-          pizzaPrice = 50;
-          break;
-
-        case "6":
-          pizzaPrice = 50;
-          break;
-
-        case "7":
-          pizzaPrice = 50;
-          break;
         default:
           pizzaPrice;
       }

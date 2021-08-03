@@ -71,17 +71,26 @@
  /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
   background-color: black;
+  color: white;
   overflow: hidden;
   bottom: 300%;
   width: 100%;
 }
-
-/* Style the links inside the navigation bar */
-.navbar a {
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 200px 100px;
-  text-decoration: none;
-  font-size: 17px;
+.checkout {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.HomePage{
+text-align: center;
+color: red;
+width: 80px;
+height: 80px;
+padding-top: 50px;
+padding-left: 50%;
+padding-right: 50%;
+size:50%;
+margin: auto;
+}
+#btn{
+font-size: 25px;
 }
