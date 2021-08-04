@@ -70,29 +70,6 @@ $(document).ready(function() {
     $("#contactform").slideDown();
   });
   $("#submitbutton").click(function(event) {
-    event.preventDefault();
-    var inputtedFirstName = $("input#first-name").val();
-    var inputtedLastName = $("input#last-name").val();
-    var inputtedEmailAddress = $("input#email-address").val();
-    var inputtedPhoneNumber = $("input#phone-number").val();
-    alert(inputtedFirstName + " " + inputtedLastName + " Your order will be ready in 15mins and will be delivered in the next 20 mins")
-    $("#contactform").hide();
-    var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmailAddress, inputtedPhoneNumber);
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-    $("input#first-name").val("");
-    $("input#last-name").val("");
-    $("input#email-address").val("");
-    $("input#phone-number").val();
-    $(".contact").last().click(function() {
-      $("#show-contact").show();
-      $("#show-contact h2").text(newContact.firstName);
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
-      $(".email-address").text(newContact.email);
-      $(".phone-number").text(newContact.phonenumber);
-    });
-  });
-  $(".sendicon").click(function(event) {
-    alert("Thank you for your feedback");
+
   });
 });
