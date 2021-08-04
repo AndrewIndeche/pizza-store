@@ -4,7 +4,7 @@ $(document).ready(function() {
     // alert("yes");
     event.preventDefault();
     // Gets the input of one pizza
-    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop) {
+    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop,drinks) {
       var pizzaSizing = $("#inputGroupSelect01 option:selected").val();
       var pizzaCrusting = $("#inputGroupSelect2 option:selected").val();
       var pizzaTopping = $("#inputGroupSelect03 option:selected").val();
@@ -50,14 +50,13 @@ $(document).ready(function() {
         default:
           pizzaPrice;
       }
-
-
       var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping);
 
 
       function addToQuantity() {
         var pizzaQuantity = $("input#noOfOrders").val();
-        var grandTotal = total * parseInt(pizzaQuantity);
+        var grandTotal = total * parseInt(pizzaQuantity) ;
+
 
         $(".total").append(grandTotal);
       }
@@ -70,5 +69,6 @@ $(document).ready(function() {
     $("#contactform").slideDown();
   });
   $("#submitbutton").click(function(event) {
+
   });
 });
