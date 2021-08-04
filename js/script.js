@@ -1,22 +1,10 @@
 $(document).ready(function() {
-    window.onscroll = function() {myFunction()};
-      var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-       function myFunction() {
-         if (window.pageYOffset >= sticky) {
-           navbar.classList.add("sticky")
-           } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-
-$(document).ready(function() {
   $("button#wholeOrder").click(function() {
 
     // alert("yes");
     event.preventDefault();
     // Gets the input of one pizza
-    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop,drinks) {
+    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop) {
       var pizzaSizing = $("#inputGroupSelect01 option:selected").val();
       var pizzaCrusting = $("#inputGroupSelect2 option:selected").val();
       var pizzaTopping = $("#inputGroupSelect03 option:selected").val();
@@ -62,15 +50,25 @@ $(document).ready(function() {
         default:
           pizzaPrice;
       }
+
+
       var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping);
 
 
       function addToQuantity() {
         var pizzaQuantity = $("input#noOfOrders").val();
-        var grandTotal = total * parseInt(pizzaQuantity) ;
+        var grandTotal = total * parseInt(pizzaQuantity);
 
-        $('#form1').submit(function(event){
-              event.preventDefault();
-        });
+        $(".total").append(grandTotal);
+      }
+      addToQuantity();
+    }
+    pizzaOne();
+    $("#deliverPizza").show();
+  });
+  $("#deliverPizza").click(function() {
+    $("#contactform").slideDown();
+  });
+  $("#submitbutton").click(function(event) {
   });
 });
