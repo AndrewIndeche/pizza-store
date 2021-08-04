@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+       function myFunction() {
+         if (window.pageYOffset >= sticky) {
+           navbar.classList.add("sticky")
+           } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+$(document).ready(function() {
   $("button#wholeOrder").click(function() {
 
     // alert("yes");
@@ -57,18 +69,8 @@ $(document).ready(function() {
         var pizzaQuantity = $("input#noOfOrders").val();
         var grandTotal = total * parseInt(pizzaQuantity) ;
 
-
-        $(".total").append(grandTotal);
-      }
-      addToQuantity();
-    }
-    pizzaOne();
-    $("#deliverPizza").show();
-  });
-  $("#deliverPizza").click(function() {
-    $("#contactform").slideDown();
-  });
-  $("#submitbutton").click(function(event) {
-
+        $('#form1').submit(function(event){
+              event.preventDefault();
+        });
   });
 });
