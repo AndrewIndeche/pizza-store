@@ -29,7 +29,7 @@
 #HomeID {
     background-image: url("../images/home.jpg");
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 20px;
     height:1050px;
     color: white;
     background-repeat: no-repeat;
@@ -38,6 +38,7 @@
    background-image: url("../images/background2.jpg");
    background-size:cover;
    padding-left: 15%;
+   padding-top: 1%;
    height:800px;
    background-repeat: no-repeat;
 }
@@ -93,4 +94,8 @@ margin: auto;
 }
 #btn{
 font-size: 25px;
+}
+
+.p {
+  font-size: 30px;
 }

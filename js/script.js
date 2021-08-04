@@ -70,6 +70,5 @@ $(document).ready(function() {
     $("#contactform").slideDown();
   });
   $("#submitbutton").click(function(event) {
-
   });
 });
