@@ -52,6 +52,7 @@
   </div>
   <select class="browser-default custom-select" id="inputGroupSelect2">
     <option selected>Choose pizza crust...</option>
+    <option value="0">Thin(ksh 0)</option>
     <option value="150">Thick(ksh 150)</option>
   </select>
 </div>
@@ -66,16 +67,30 @@
     <option value="150">cheese(ksh 150)</option>
   </select>
 </div>
-</div>
 <div class="input-group">
   <select>
     <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
   </select>
-</div><br>
+</div>
+  <div class="submit">
+    <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
+   </div>
 <p class="total">Total Price:</p>
-<div class="submit">
-  <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
- </div>
+</div>
+ <div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Enter Name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Enter Contacts">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Enter Location">
+  </div>
+</div>
+<div class="container" id="submit">
+  <button id="submitbutton" type="submit" class="btn btn-info">Deliver</button>
+</div>
     </div>
   </div>
 </form>
