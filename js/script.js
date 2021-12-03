@@ -4,10 +4,11 @@ $(document).ready(function() {
     // alert("yes");
     event.preventDefault();
     // Gets the input of one pizza
-    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop) {
+    var pizzaOne = function add(pizzaSize, pizzaCrust, pizzaTop,drinks) {
       var pizzaSizing = $("#inputGroupSelect01 option:selected").val();
       var pizzaCrusting = $("#inputGroupSelect2 option:selected").val();
       var pizzaTopping = $("#inputGroupSelect03 option:selected").val();
+      var drinks = $("#inputGroupSelect04 option:selected").val();
       var pizzaPrice = 0;
 
       switch (pizzaSizing) {
@@ -54,10 +55,37 @@ $(document).ready(function() {
 
         default:
           pizzaPrice;
+          break;
+      }
+
+      switch (drinks) {
+        case "1":
+          pizzaPrice = 80;
+          break;
+
+        case "2":
+          pizzaPrice = 100;
+          break;
+
+        case "3":
+          pizzaPrice = 120;
+          break;
+
+        case "4":
+          pizzaPrice = 150;
+          break;
+
+        case "5":
+          pizzaPrice = 250;
+          break;
+
+        default:
+          pizzaPrice;
+          break;
       }
 
 
-      var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping);
+      var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping) + parseInt(drinks);
 
 
       function addToQuantity() {

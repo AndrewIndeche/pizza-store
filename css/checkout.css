@@ -1,52 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-#headerimage{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-#HomeID {
-    background-image: url("../images/home.jpg");
-    background-size: cover;
-    padding-top: 20px;
-    height:40em;
-    color: white;
-  }
-#MenuID{
+body{
    background-image: url("../images/background2.jpg");
    background-size:cover;
    padding-left: 15%;
    padding-top: 1%;
    height:800px;
    background-repeat: no-repeat;
+   margin: 0;
+   font-size: 32px;
+   font-family: 'Architects Daughter', cursive;
 }
-#menuimage{
-  height:100%;
-  width:70%;
-  padding-left:15%;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-  }
+
   .row {
     display: flex;
     }
@@ -61,15 +26,16 @@
    padding-left: 100px;
    padding-right: 100px;
    box-shadow: 0 0px 20px 0 ;
-   background-color: rgba(200, 10, 15,0.8);
+   background-color: rgba(200, 10, 15,1);
    transition: 0.3s;
  }
  /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
-  background-color: black;
+  background-color: red;
   color: white;
   overflow: hidden;
   bottom: 300%;
+  padding-top:50px;
   width: 100%;
 }
 .checkout {
@@ -78,19 +44,7 @@
 }
 
 #btn{
-font-size: 25px;
-}
-
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: 'Architects Daughter', cursive;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
+font-size: 30px;
 }
 
 #navbar {
@@ -104,9 +58,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 23px;
 }
 
 #navbar a:hover {
@@ -118,17 +72,6 @@ body {
   background-color: red;
   color: white;
 }
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
+.input-group{
+width:50%;
 }
