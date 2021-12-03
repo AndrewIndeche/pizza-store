@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+#headerimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#HomeID {
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    height:40em;
+    color: white;
+  }
+#MenuID{
+   background-image: url("../images/background2.jpg");
+   background-size:cover;
+   padding-left: 15%;
+   padding-top: 1%;
+   height:800px;
+   background-repeat: no-repeat;
+}
+#menuimage{
+  height:100%;
+  width:70%;
+  padding-left:15%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+  }
+  .row {
+    display: flex;
+    }
+
+  .h1 {
+      text-align: center;
+      font-size:70px;
+   }
+   .card {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   padding-left: 100px;
+   padding-right: 100px;
+   box-shadow: 0 0px 20px 0 ;
+   background-color: rgba(200, 10, 15,0.8);
+   transition: 0.3s;
+ }
+ /* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  bottom: 300%;
+  width: 100%;
+}
+.checkout {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#btn{
+font-size: 25px;
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #000000;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
