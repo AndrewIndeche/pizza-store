@@ -31,7 +31,7 @@ $(document).ready(function() {
           break;
 
         case "2":
-            pizzaPrice = 50;
+          pizzaPrice = 50;
           break;
 
           default:
