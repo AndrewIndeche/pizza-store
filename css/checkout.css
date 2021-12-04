@@ -3,28 +3,30 @@
 body{
    background-image: url("../images/background2.jpg");
    background-size:cover;
-   padding-left: 15%;
+   padding-right: 18%;
    padding-top: 1%;
    height:800px;
    background-repeat: no-repeat;
    margin: 0;
    font-size: 18px;
    font-family: 'Architects Daughter', cursive;
+   margin-left: 50px;
+   margin-bottom: 60px;
 }
-
   .row {
     display: flex;
     }
 
   .h1 {
-      text-align: center;
-      font-size:30px;
+    text-align: center;
+    font-size:30px;
    }
    .card {
    padding-top: 100px;
-   padding-bottom: 100px;
+   padding-bottom: 12em;
    padding-left: 100px;
    padding-right: 100px;
+   margin-bottom: 40px;
    box-shadow: 0 0px 20px 0 ;
    background-color: rgba(200, 10, 15,1);
    transition: 0.3s;
@@ -37,6 +39,7 @@ body{
   bottom: 300%;
   padding-top:50px;
   width: 100%;
+  font-size: 40px;
 }
 .checkout {
     border-radius: 20px;
@@ -49,8 +52,7 @@ font-size: 30px;
 
 #navbar {
   overflow: hidden;
-  background-color: #000000;
-  background: rgba(0, 0, 0, 0.3);
+  font-size: 23px;
 }
 
 #navbar a {
@@ -64,8 +66,7 @@ font-size: 30px;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  color: white;
 }
 
 #navbar a.active {
@@ -82,6 +83,7 @@ font-size: 30px;
   color:white;
   font-weight:bold;
   display: none;
+  font-size: 18px;
 }
 th{
 justify-content: space-between;
@@ -89,5 +91,17 @@ justify-content: space-between;
 .total{
   color:white;
   font-weight:bold;
-  font-size: 40px;
+  font-size: 20px;
+}
+.deliver{
+  font-size: 30px;
+  right: 0px;
+  float: left;
+  display: none;
+}
+#deliver{
+  padding-bottom: 30em;
+}
+.nav-link{
+  color:white;
 }

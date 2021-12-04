@@ -91,6 +91,9 @@ $(document).ready(function() {
         var grandTotal = total * parseInt(pizzaQuantity);
 
         $(".total").append(grandTotal);
+
+        var delivery = total + parseInt(120);
+        $(".deliver").append(delivery);
       }
       addToQuantity();
     }
@@ -104,7 +107,8 @@ $(document).ready(function() {
   });
 $(document).ready(function() {
   $("#deliverPizza").click(function() {
-    $(".form").hide();
+    $(".deliver").slideDown();
+    alert("Thank you! Your delivery is on the way,pay the driver on delivery");
     document.getElementById(".form").reset();
  });
   });
