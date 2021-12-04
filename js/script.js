@@ -81,12 +81,10 @@ $(document).ready(function() {
 
         default:
           pizzaPrice;
-          break;
       }
 
 
       var total = parseInt(pizzaSizing) + parseInt(pizzaCrusting) + parseInt(pizzaTopping) + parseInt(drinks);
-
 
       function addToQuantity() {
         var pizzaQuantity = $("input#noOfOrders").val();
@@ -97,11 +95,16 @@ $(document).ready(function() {
       addToQuantity();
     }
     pizzaOne();
-    $("#deliverPizza").show();
-  });
-  $("#deliverPizza").click(function() {
-    $("#contactform").slideDown();
-  });
+      alert("Thank you! Proceed to checkout");
+      $(".form").slideDown();
+    });
   $("#submitbutton").click(function(event) {
+     event.preventDefault();
+    });
   });
-});
+$(document).ready(function() {
+  $("#deliverPizza").click(function() {
+    $(".form").hide();
+    document.getElementById(".form").reset();
+ });
+  });

@@ -8,7 +8,7 @@ body{
    height:800px;
    background-repeat: no-repeat;
    margin: 0;
-   font-size: 32px;
+   font-size: 18px;
    font-family: 'Architects Daughter', cursive;
 }
 
@@ -18,7 +18,7 @@ body{
 
   .h1 {
       text-align: center;
-      font-size:70px;
+      font-size:30px;
    }
    .card {
    padding-top: 100px;
@@ -73,5 +73,21 @@ font-size: 30px;
   color: white;
 }
 .input-group{
-width:50%;
+  width:50%;
+}
+.form{
+  position: absolute; /*or fixed*/
+  right: 0px;
+  float: right;
+  color:white;
+  font-weight:bold;
+  display: none;
+}
+th{
+justify-content: space-between;
+}
+.total{
+  color:white;
+  font-weight:bold;
+  font-size: 40px;
 }

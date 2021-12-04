@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>checkout basket</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/wickedcss.min.css">
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -30,6 +32,7 @@
     </nav>
 <div class="container pt-5 mt-5 ">
     <div class="card mt-5">
+      <h2 style ="color:white">Choose your Pizza</h2>
     <div class="card-body" >
       <div class="input-group mb-3">
   <div class="input-group-prepend">
@@ -74,14 +77,84 @@
 </div>
 <div class="input-group">
   <select>
-    <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
+    <input type="number" class="form-control input" id="noOfOrders" placeholder="how many orders?" required>
   </select>
 </div><br>
-<p class="total">Total Price:</p>
+</tbody>
 <div class="submit">
   <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
- <button type="submit" class="btn btn-info" value="Delivery" id="deliverPizza">Delivery</button>
- <button type="reset" class="btn btn-info"  value="Clear Text" id="deliverPizza">New order</button>
+ </div>
+<div class = "form" id="contactform">
+  <!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Checkout Summary.</p>
+    <p class="total">Your Total Order is:</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="location" name="location" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Location</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <button type="submit" class="btn btn-info" value="Delivery" id="deliverPizza">CheckOut</button>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 </div>
     </div>
   </div>
