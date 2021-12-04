@@ -92,7 +92,7 @@ $(document).ready(function() {
 
         $(".total").append(grandTotal);
 
-        var delivery = total + parseInt(120);
+        var delivery = grandTotal + 120;
         $(".deliver").append(delivery);
       }
       addToQuantity();
